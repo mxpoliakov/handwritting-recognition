@@ -16,6 +16,16 @@ python main.py
 
 This will download the dataset automatically, create directory structure and train the model.
 
+Accuracy after first and last epoch:
+
+    Epoch: 1
+    Character error rate: 62.932467%. Word accuracy: 23.824354%.
+    ...
+    Epoch: 28
+    Character error rate: 8.800423%. Word accuracy: 77.172220%.
+
+After 28 epoches, we reached `77%` word accuracy and `8.8%` character error rate, and stopped training, as 4 consecutive epochs did not lowered error rate.
+
 There is pretrained model in `/model` folder. If you want to retrain model or train it with your dataset - clear `/model` folder.
 
 ## Pipeline
@@ -41,10 +51,14 @@ You should specify at least one image path. Example of usage:
 
 ## Authors
 
-* **Mykhailo Poliakov** 
-* **Anton Borkivskyi**
-* **Bohdan Borkivskyi**
+* **[Mykhailo Poliakov](https://github.com/mxpoliakov)** 
+* **[Anton Borkivskyi](https://github.com/AntonBorkivskyi)**
+* **[Bohdan Borkivskyi](https://github.com/BohdanBorkivskyi)**
 
 ## Acknowledgments
 
 [Build a Handwritten Text Recognition System using TensorFlow by Harold Scheidl](https://towardsdatascience.com/build-a-handwritten-text-recognition-system-using-tensorflow-2326a3487cd5)
+
+[An End-to-End Trainable Neural Network for Image-based Sequence
+Recognition and Its Application to Scene Text Recognition
+](https://arxiv.org/pdf/1507.05717.pdf)

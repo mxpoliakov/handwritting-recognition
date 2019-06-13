@@ -12,7 +12,8 @@ if __name__ == "__main__":
 
     model = Model()
     model.fit(
-        X_train,
-        y_train,
-        X_test, y_test
+        X_train, y_train,
+        X_test, y_test,
+        early=4,
+        epoches=50
     )
