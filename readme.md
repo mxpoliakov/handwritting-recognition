@@ -49,7 +49,7 @@ Accuracy after first and last epoch:
     Epoch: 28
     Character error rate: 8.800423%. Word accuracy: 77.172220%.
 
-After 28 epoches, we reached `77%` word accuracy and `8.8%` character error rate, and stopped training, as 4 consecutive epochs did not lowered error rate.
+After 28 epoches, we reached `77%` word accuracy and `8.8%` character error rate, and stopped training, as 4 consecutive epochs did not lower error rate.
 
 There is pretrained model in `/model` folder. If you want to retrain model or train it with your dataset - clear `/model` folder.
 
