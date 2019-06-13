@@ -16,6 +16,24 @@ python main.py
 
 This will download the dataset automatically, create directory structure and train the model.
 
+There is pretrained model in `/model` folder. If you want to retrain model or train it with your dataset - clear `/model` folder.
+
+#### Predicting results
+To predict custom handwriting run
+
+    python predict.py <path1> [path2] [path_n]
+You should specify at least one image path. Example of usage:
+
+    >python predict.py test/test1.png test/test2.png test/test3.png
+
+    Your predictions are:
+    test/test1.png : Anton
+    test/test2.png : Gurbych
+    test/test3.png : ucu-mL
+
+| Image | ![Anton](test/test1.png) | ![Gurbych](test/test2.png) | ![ucu-ml](test/test3.png) |
+| :---: | :---: | :---: | :---: |
+| Predicted label | Anton | Gurbych | ucu-mL
 
 
 ## Authors
