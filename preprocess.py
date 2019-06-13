@@ -52,6 +52,4 @@ def create_dataset():
             X.append(img)
             y.append(word_text)
 
-    chars = sorted(set.union(*(set(word_text) for word_text in words_df["text"])))
-
-    return X, y, chars
+    return X, y
