@@ -18,7 +18,10 @@ This will download the dataset automatically, create directory structure and tra
 
 There is pretrained model in `/model` folder. If you want to retrain model or train it with your dataset - clear `/model` folder.
 
-#### Predicting results
+## Pipeline
+![alt text](scheme.png)
+
+## Predicting results
 To predict custom handwriting run
 
     python predict.py <path1> [path2] [path_n]
