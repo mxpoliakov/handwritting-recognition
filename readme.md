@@ -16,7 +16,9 @@ python main.py
 
 This will download the dataset automatically, create directory structure and train the model.
 
+## Pipeline
 
+![alt text](scheme.png)
 
 ## Authors
 
