@@ -31,14 +31,33 @@ python main.py
 
 This will download the dataset automatically, create directory structure and train the model.
 
-## Pipeline
+There is pretrained model in `/model` folder. If you want to retrain model or train it with your dataset - clear `/model` folder.
 
+## Pipeline
 ![alt text](scheme.png)
 
 The architecture:
 1) convolutional layers, which extract a feature sequence from the input image;
 2) recurrent layers, which predict a label distribution for each frame;
 3) transcription layer, which translates the per-frame predictions into the final label sequence.
+
+
+## Predicting results
+To predict custom handwriting run
+
+    python predict.py <path1> [path2] [path_n]
+You should specify at least one image path. Example of usage:
+
+    >python predict.py test/test1.png test/test2.png test/test3.png
+
+    Your predictions are:
+    test/test1.png : Anton
+    test/test2.png : Gurbych
+    test/test3.png : ucu-mL
+
+| Image | ![Anton](test/test1.png) | ![Gurbych](test/test2.png) | ![ucu-ml](test/test3.png) |
+| :---: | :---: | :---: | :---: |
+| Predicted label | Anton | Gurbych | ucu-mL
 
 
 ## Authors
