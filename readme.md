@@ -2,6 +2,21 @@
 
 This project is created to recognize handwritten words from [IAM database](http://www.fki.inf.unibe.ch/databases/iam-handwriting-database). 
 
+## Project structure
+```
+handwritting-recognition
+│   README.md
+|   requirements.txt
+│   model - folder with pretrained model   
+│   test - test dataset
+|   main.py
+│   layers.py - implementation of CNN, RNN and CTC layers
+│   model.py - model implementation
+|   predict.py - prediction of own handwriting
+│   preprocess.py - input image preprocessing
+│   structure.py - collecting dataset
+```
+
 ## Getting Started
 
 You should have Python and Pip installed.
@@ -30,6 +45,12 @@ There is pretrained model in `/model` folder. If you want to retrain model or tr
 
 ## Pipeline
 ![alt text](scheme.png)
+
+The architecture:
+1) convolutional layers, which extract a feature sequence from the input image;
+2) recurrent layers, which predict a label distribution for each frame;
+3) transcription layer, which translates the per-frame predictions into the final label sequence.
+
 
 ## Predicting results
 To predict custom handwriting run
